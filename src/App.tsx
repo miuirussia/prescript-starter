@@ -1,8 +1,10 @@
+import { signal } from "@preact-signals/safe-react";
+
+import { Button } from "@/components/ui/button";
+
 import reactLogo from "@/assets/react.svg";
 import viteLogo from "@/assets/vite.svg";
 import purescriptLogo from "@/assets/purescript.svg";
-
-import { signal } from "@preact-signals/safe-react";
 
 const count = signal(0);
 
@@ -23,7 +25,13 @@ function App() {
         </div>
         <h1>Vite + React + Purescript</h1>
         <div className="card">
-          <button onClick={() => { count.value++ }}>count is {count.value}</button>
+          <Button
+            onClick={() => {
+              count.value++;
+            }}
+          >
+            count is {count.value}
+          </Button>
           <p>
             Edit <code>src/App.tsx</code> and save to test HMR
           </p>
