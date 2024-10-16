@@ -12,15 +12,15 @@ function App() {
   return (
     <div className="flex items-center justify-center w-dvw h-dvh">
       <div className="text-center">
-        <div className="flex">
+        <div className="flex justify-center">
           <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="size-[150px] react" alt="React logo" />
+            <img src={reactLogo} className="size-[100px] react hover:drop-shadow" alt="React logo" />
           </a>
           <a href="https://vite.dev" target="_blank">
-            <img src={viteLogo} className="size-[150px] vite" alt="Vite logo" />
+            <img src={viteLogo} className="size-[100px] vite hover:drop-shadow" alt="Vite logo" />
           </a>
           <a href="https://purescript.org" target="_blank">
-            <img src={purescriptLogo} className="size-[150px] purescript" alt="Purescript logo" />
+            <img src={purescriptLogo} className="size-[100px] purescript hover:drop-shadow" alt="Purescript logo" />
           </a>
         </div>
         <h1>Vite + React + Purescript</h1>
